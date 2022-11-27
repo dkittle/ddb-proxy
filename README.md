@@ -12,6 +12,32 @@ It provides the following backend functionality for [ddb-importer](https://githu
 
 ## Setup
 
+Grab dependencies:
+```
+npm install
+```
+
+Start the app locally:
+```
+npm start
+```
+
+Build docker container:
+```
+docker build . -t <username>/ddb-proxy 
+```
+
+Run docker container:
+```
+docker run --name ddb-proxy -p 3000:3000 <username>/ddb-proxy
+```
+
+Test:
+```
+curl -v http://localhost:3000/ping
+```
+
+
 This proxy is updated to work with the latest version of DDB Importer as quickly as possible.
 
 Run this as a [nodeJS](https://nodejs.org/en/) app the standard way.

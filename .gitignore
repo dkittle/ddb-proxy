@@ -3,3 +3,7 @@ node_modules/
 /dist/
 yarn-error.log
 /sync*.sh
+docker
+node_nodules
+package-lock.json
+yarn.lock
